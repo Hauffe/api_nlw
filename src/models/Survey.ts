@@ -5,13 +5,13 @@ import {v4 as uuid} from 'uuid'
 class Survey{
 
     @PrimaryColumn()
-    readonly id: String;
+    readonly id: string;
 
     @Column()
-    title: String;
+    title: string;
 
     @Column()
-    description: String;
+    description: string;
 
     @CreateDateColumn()
     created_at: Date;

@@ -20,6 +20,10 @@ yarn typeorm migration:create -n CreateSurveys //create migrations
 yarn typeorm migration:run //execute migrations
 yarn typeorm migration:revert //revert migrations
 
+yarn typeorm migration:create -n CreateSurveysUsers //create migrations
+yarn typeorm migration:run //execute migrations
+yarn typeorm migration:revert //revert migrations
+
 ------------- Tests ---------------
 yarn add jest @types/jest -D
 yarn jest --init
@@ -36,3 +40,9 @@ yarn test
 
 yarn add supertest @types/supertest -D
 doskey //history
+
+
+-------------- Email sender -------
+yarn add nodemailer
+yarn add @types/nodemailer -D
+yarn add handlebars
